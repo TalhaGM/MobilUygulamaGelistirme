@@ -1,9 +1,8 @@
 #  Mobile Application Development 
-## Table of Contents
-- [Installation](#installation)
+<h1 align="center">## Table of Contents  </h1>
 - [Information](#information)
 - [Contact](#contact)         
-## Information
+<h2 align="center">## Information  </h2>
 <h4 align="center">  E-LABORATUVAR SİSTEMİ  </h4>
 <br>
 <h6>Kullanıcı Tarafı</h6>
@@ -24,7 +23,7 @@ kıyaslama ↑ ↓ ↔
 
 
 
-## Contact
+<h2 align="center"> ## Contact </h2>
 Ömer Talha AYDIN - [omertaydin7@gmail.com](omertaydin7@gmail.com)
 
 Project Link: [https://github.com/TalhaGM/MobilUygulamaGelistirme](https://github.com/TalhaGM/MobilUygulamaGelistirme)
