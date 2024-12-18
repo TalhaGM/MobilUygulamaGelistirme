@@ -1,5 +1,5 @@
 #  Mobile Application Development 
-<h1 align="center">## Table of Contents  </h1>
+## Table of Contents  
 - [Information](#information)
 - [Contact](#contact)         
 <h2 align="center">## Information  </h2>
