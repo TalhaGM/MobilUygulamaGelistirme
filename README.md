@@ -1,10 +1,10 @@
-# Mobile Application Development
+#  Mobile Application Development 
 ## Table of Contents
 - [Installation](#installation)
 - [Information](#information)
 - [Contact](#contact)         
 ## Information
-<h4>  E-LABORATUVAR SİSTEMİ  </h4>
+<h4 align="center">  E-LABORATUVAR SİSTEMİ  </h4>
 <br>
 <h6>Kullanıcı Tarafı</h6>
 <br>
