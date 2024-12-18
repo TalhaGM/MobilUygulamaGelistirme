@@ -2,7 +2,7 @@
 ## Table of Contents  
 - [Information](#information)
 - [Contact](#contact)         
-<h2 align="center">## Information  </h2>
+## Information  
 <h4 align="center">  E-LABORATUVAR SİSTEMİ  </h4>
 <br>
 <h6>Kullanıcı Tarafı</h6>
@@ -23,7 +23,7 @@ kıyaslama ↑ ↓ ↔
 
 
 
-<h2 align="center"> ## Contact </h2>
+## Contact
 Ömer Talha AYDIN - [omertaydin7@gmail.com](omertaydin7@gmail.com)
 
 Project Link: [https://github.com/TalhaGM/MobilUygulamaGelistirme](https://github.com/TalhaGM/MobilUygulamaGelistirme)
