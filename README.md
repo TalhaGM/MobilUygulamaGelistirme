@@ -4,13 +4,17 @@
 - [Information](#information)
 - [Contact](#contact)         
 ## Information
-E-LABORATUVAR SİSTEMİ
-Kullanıcı Tarafı
+<h2>  E-LABORATUVAR SİSTEMİ  </h2>
+<br>
+<h1>Kullanıcı Tarafı</h1>
+<br>
 Geçmiş Tahlillerin listelenmesi, görüntülenmesi,
 Tahlil değerlerinin (IgA, IgM, IgG, IgG1, IgG2, IgG3, IgG4) tüm raporlarda aranması ve
 sonuçların düşük, normal, yüksek olarak farklı renklerde görüntülenmesi ↑ ↓ ↔
 Kullanıcı Profil yönetimi
-Yönetici Tarafı
+<br>
+<h1>Yönetici Tarafı</h1>
+<br>
 Kılavuz oluşturma, veri girişi
 Oluşturulan kılavuzlarda hastanın yaşına göre (IgA, IgM, IgG, IgG1, IgG2, IgG3, IgG4) değer
 arama
