@@ -21,6 +21,6 @@ kıyaslama ↑ ↓↔
 
 
 ## Contact
-Your Name - [omertaydin7@gmail.com](omertaydin7@gmail.com)
+Ömer Talha AYDIN - [omertaydin7@gmail.com](omertaydin7@gmail.com)
 
 Project Link: [https://github.com/TalhaGM/MobilUygulamaGelistirme](https://github.com/TalhaGM/MobilUygulamaGelistirme)
