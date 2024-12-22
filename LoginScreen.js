@@ -1,83 +1,67 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
-import { auth } from '../firebase';
-import { Button } from 'react-native-elements';
 
-export default function LoginScreen ({ navigation })  {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+import { StyleSheet, Text, View, KeyboardAvoidingView, TextInput , TouchableOpacity } from 'react-native'
+import React ,{useState} from 'react'
 
-  const handleLogin = async () => {
-    try {
-      await auth().signInWithEmailAndPassword(email, password);
-      alert('Giriş Başarili!')
-      navigation.navigate('Home'); // Navigate to home screen after successful login
-    } catch (error) {
-      alert(error.message);
-    }
-  };
-
+export default function LoginScreen() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Login</Text>
-      {error ? <Text style={styles.error}>{error}</Text> : null}
-      <TextInput
-        style={styles.input}
-        placeholder="Email"
-        keyboardType="email-address"
-        value={email}
-        onChangeText={setEmail}
-        autoCapitalize="none"
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Password"
-        secureTextEntry
-        value={password}
-        onChangeText={setPassword}
-      />
-      <Button title="Login" onPress={handleLogin} buttonStyle={styles.button} />
-      <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
-        <Text style={styles.link}>Don't have an account? Sign Up</Text>
-      </TouchableOpacity>
-    </View>
-  );
+    <KeyboardAvoidingView style={styles.container} behavior='padding'>
+        <View style={styles.inputContainer}>
+            <TextInput style={styles.input} placeholder='Email' 
+            value={email} onChangeText={text => setEmail(text)} />
+            <TextInput style={styles.input} placeholder='Şifre' 
+            value={password} onChangeText={text => setPassword(text)} secureTextEntry />
+        </View>
+        <View style={styles.buttonContainer} >
+            <TouchableOpacity style={styles.button}>
+                <Text style={styles.buttonText}>Giriş Yap</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={[styles.button,styles.outlineButton]}>
+                <Text style={styles.outlineButtonText}>Kayıt Ol!</Text>
+            </TouchableOpacity>
+        </View>
+    </KeyboardAvoidingView>
+  )
 }
-
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    padding: 20,
-    backgroundColor: '#f5f5f5',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  input: {
-    height: 50,
-    borderColor: '#ddd',
-    borderWidth: 1,
-    borderRadius: 5,
-    paddingHorizontal: 10,
-    marginBottom: 20,
-  },
-  button: {
-    backgroundColor: '#007bff',
-    borderRadius: 5,
-  },
-  link: {
-    color: '#007bff',
-    marginTop: 20,
-    textAlign: 'center',
-  },
-  error: {
-    color: 'red',
-    marginBottom: 20,
-    textAlign: 'center',
-  },
-});
+    container: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    inputContainer: {
+      width: '80%',
+    },
+    input: {
+      backgroundColor: 'white',
+      paddingHorizontal: 15,
+      paddingVertical: 10,
+      marginTop: 5,
+      borderRadius: 10,
+    },
+    buttonContainer: {
+      width: '60%',
+      marginTop: 40,
+    },
+    button: {
+      backgroundColor: '#FF6347',
+      padding: 15,
+      alignItems: 'center',
+      borderRadius: 10,
+    },
+    buttonText: {
+      color: 'white',
+      fontSize: 16,
+      fontWeight: 700,
+    },
+    outlineButton: {
+      backgroundColor: 'white',
+      marginTop: 5,
+    },
+    outlineButtonText: {
+      color: '#FF6347',
+      fontSize: 16,
+      fontWeight: 700,
+    },
+  });
