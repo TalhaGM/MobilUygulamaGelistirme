@@ -1,28 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './screens/HomeScreen';
+import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from './screens/LoginScreen';
+import AdminScreen from './screens/AdminScreen';
+import UserScreen from './screens/UserScreen';
+import KilavuzAP from './screens/kilavuz_ap';
+import KilavuzCilv from './screens/kilavuz_cilv';
+import KilavuzOS from './screens/Kilavuz_os';
 
-const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen options={{headerShown: false}} name="Login" component={LoginScreen} />
-        <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Navigator initialRouteName="LoginScreen">
+        <Stack.Screen options={{headerShown: false}} name="LoginScreen" component={LoginScreen} />
+        <Stack.Screen name="AdminScreen" component={AdminScreen} />
+        <Stack.Screen name="UserScreen" component={UserScreen} />
+        <Stack.Screen name="KilavuzAP" component={KilavuzAP} />
+        <Stack.Screen name="KilavuzCilv" component={KilavuzCilv} />
+        <Stack.Screen name="KilavuzOS" component={KilavuzOS} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
