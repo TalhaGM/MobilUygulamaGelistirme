@@ -21,9 +21,5 @@ Hasta takibi, ad soyad girildiğinde hastanın tarihlere göre tahlillerinin get
 Listelenen tahliller arasında geçmiş değerler arasında değişim yok, artmış ya da azalmış şeklinde
 kıyaslama ↑ ↓ ↔
 
-
-
-## Contact
-Ömer Talha AYDIN - [omertaydin7@gmail.com](omertaydin7@gmail.com)
-
+## Project Files
 Project Link: [https://github.com/TalhaGM/MobilUygulamaGelistirme](https://github.com/TalhaGM/MobilUygulamaGelistirme)
